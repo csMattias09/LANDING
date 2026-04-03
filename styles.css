@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(2,6,23,0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+}
+
+.navbar a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #7c3aed;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero img {
+  width: 140px;
+  border-radius: 50%;
+}
+
+/* MAIN */
+.main {
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+/* GRID */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARDS */
+.card {
+  background: rgba(30,41,59,0.75);
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s;
+  backdrop-filter: blur(12px);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(124,58,237,0.25);
+}
+
+.featured {
+  border: 1px solid rgba(124,58,237,0.5);
+}
+
+/* EXPERIENCIA GRID */
+.timeline.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* SOCIALS */
+.socials a {
+  margin: 0 10px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.socials a:hover {
+  color: #7c3aed;
+}
+
+/* CONTACT */
+.contact i {
+  color: #7c3aed;
+}
+
+/* LISTAS */
+ul {
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.tech-icons div {
+  background: #334155;
+  padding: 20px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.tech-icons div i {
+  font-size: 1.8rem;
+}
+
+.tech-icons div:hover {
+  background: #7c3aed;
+  transform: translateY(-5px);
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card-link:hover .card {
+  cursor: pointer;
+  border: 1px solid #7c3aed;
+}
+/* ICONOS EN TITULOS */
+h2 i, h3 i {
+  margin-right: 10px;
+  color: #7c3aed;
+}
+
+h2, h3 {
+  display: flex;
+  align-items: center;
+}
+
+/* TITULO CENTRADO */
+.section-title {
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ANIMACION ICONOS */
+.card h3 i {
+  transition: 0.3s;
+}
+
+.card:hover h3 i {
+  transform: scale(1.2);
+  color: #a78bfa;
+}
